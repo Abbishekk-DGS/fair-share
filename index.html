@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Fair Share · split a bill by what each person had</title>
+    <meta name="description" content="Scan a bill, tap who had what, and see who pays whom. Split equally or item by item, with tax shared fairly. Free, open source, no sign-up." />
+    <meta name="author" content="Abbishekk DGS" />
+    <meta name="theme-color" content="#0C7A72" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Fair Share" />
+    <meta property="og:title" content="Fair Share" />
+    <meta property="og:description" content="Scan a bill, tap who had what, and see who pays whom." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem("fairshare.settings.v1") || "{}");
+        document.documentElement.dataset.theme = s.theme || "system";
+        if (s.lang) document.documentElement.lang = s.lang;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Fair Share needs JavaScript to run.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
