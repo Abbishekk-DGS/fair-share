@@ -7,7 +7,7 @@
 **Split a bill by what each person had.**
 Take a photo of the bill, tap who had what, and see who pays whom.
 
-[**Open the app →**](LIVE_URL) · Free · No sign-up · Works on any phone · English and தமிழ்
+[**Open the app →**](https://fair-share-dgs.vercel.app) · Free · No sign-up · Works on any phone · English and தமிழ்
 
 ![Fair Share on a phone: scan a bill, tap who had each item, settle up by UPI](docs/screens.png)
 
