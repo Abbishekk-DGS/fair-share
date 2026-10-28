@@ -115,6 +115,7 @@ describe("parseReceiptText", () => {
   it("reads a supermarket bill", () => {
     const text = `TAX INVOICE
 Bill No : 600710005-003210
+Vou. No : S352005 0084 600710005
 HSN Particulars Qty/Kg N/Rate Value
 1) CGST @ 0.00%, SGST @ 0.00%
 190590 MODERN MILK PL-350g 1 42.30 42.30

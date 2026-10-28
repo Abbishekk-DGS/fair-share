@@ -32,8 +32,11 @@ export function parseReceiptText(text: string): ParsedBill {
       tokens.pop();
       tail.unshift("1");
     }
-    const amount = toNumber(tail[tail.length - 1]);
+    const last = tail[tail.length - 1];
+    const amount = toNumber(last);
     if (!Number.isFinite(amount) || amount === 0) continue;
+    // Bill numbers, phone numbers and codes: long whole numbers are never line amounts.
+    if (/^\d{5,}$/.test(last.replace(/,/g, "")) || amount >= 1e6) continue;
 
     const label = tokens.join(" ");
     if (TOTAL.test(label) && !/sub\s*total/i.test(label)) {
