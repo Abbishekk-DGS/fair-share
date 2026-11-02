@@ -15,6 +15,28 @@ Take a photo of the bill, tap who had what, and see who pays whom.
 
 </div>
 
+<!-- overview:start -->
+## Overview
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/overview-dark.svg">
+  <img alt="Fair Share overview: how it works and its output. Key numbers: Live fair-share-dgs.vercel.app; 0 accounts, trackers or ads; 2 languages: English, Tamil; Exact to the paisa. Stack: React · TypeScript · Vite · Tesseract.js · optional Gemini · Vercel · installable PWA." src="docs/overview-light.svg" width="100%">
+</picture>
+
+## Interface
+
+It is a phone-first web app with three steps.
+
+| Screen | What you can do |
+|---|---|
+| Home | **Scan a bill** (or paste or drop a photo), **Type items in** or **Try an example bill**; reopen or delete saved bills under **Your bills**; switch language; open settings |
+| 1. Items | Check the lines read from the bill against its printed total and add any difference as an adjustment; edit, add or remove lines; add tax, service, tip, discount, delivery or round-off, each shared **By what each had** or **Equally**; show the photo; change the currency |
+| 2. Split | Add or edit names, then choose **By item** or **Equally**; tap who had each item, or tap a name and then its items; use **All** for everyone and **Adjust** for shares; filter to **Not assigned**, or split what's left between everyone |
+| 3. Settle up | Choose who paid, or **Several people**; see **Who pays whom**; on rupee bills, add the receiver's UPI ID to get **Pay by UPI** and a **QR code**; then see each person's share |
+
+From **Settle up** you can send the breakdown on WhatsApp, as text, as a link that opens the same split, or through your phone's share sheet where supported. Settings has language, theme (Auto, Light or Dark) and an optional field for your own Gemini key, which stays on your phone and goes only to Google.
+<!-- overview:end -->
+
 ## Why
 
 Splitting a bill equally is easy. Splitting it fairly is not: one person had the biryani, two shared the naan, someone only had a lime soda, and the GST and service charge sit on top of everything. Fair Share reads every line of the bill for you and does the maths down to the paisa.
